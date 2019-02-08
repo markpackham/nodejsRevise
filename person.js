@@ -12,7 +12,7 @@ class Person {
   }
 
   greeting() {
-    console.log(`Hi I am ${this.name} and my age is ${this.age}`);
+    console.log(`My name is ${this.name} and I am ${this.age}`);
   }
 }
 
