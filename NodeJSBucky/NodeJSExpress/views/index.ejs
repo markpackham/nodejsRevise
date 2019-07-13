@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<h1><%= title %></h1>
+<% include templates/header.ejs %>
+<p>Welcome to <%= title %></p>
+<p><%= packham %> was here </p>
+
+<ul>
+    <% for(var i = 0; i < 3; i++){ %>
+    <li>Tuna</li>
+    <% } %>
+
+    <h3>
+        <%= videodata.categoryName %>
+    </h3>
+
+    <% videodata.categories.forEach(function (item) {
+    %>
+<li><%= item.categoryName %></li>
+    <% }); %>
+
+</ul>
+</body>
+</html>
