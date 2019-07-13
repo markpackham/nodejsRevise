@@ -1,0 +1,4 @@
+{
+    "jwtSecret": "mysecret",
+    "apiKey": "somelongstring grabbed with help from node-config"
+}
